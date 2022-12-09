@@ -9,7 +9,7 @@ function App() {
     <div>
       {gameState === "menu" && <WelcomeScreen />}
       {gameState === "quiz" && <QuizScreen />}
-      {gameState === "endScreen" && <ScoreScreen />}
+      {gameState === "end" && <ScoreScreen />}
     </div>
   );
 }

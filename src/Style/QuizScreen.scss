@@ -1,0 +1,102 @@
+.quizScreen_Container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1faee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.quizScreen_QuestionContainer {
+  width: 50vh;
+  height: 20vh;
+  background-color: #1d3557;
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .QuestionContainer_QuestionNumber {
+    font-weight: 400;
+    span {
+      font-size: medium;
+      font-weight: 100;
+    }
+    margin-bottom: 20px;
+  }
+  .QuestionContainer_QuestionText {
+    font-weight: 300;
+  }
+  .QuestionContainer_OptionSection {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .option {
+      //   background-color: red;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      border-radius: 10px;
+      border: 2px solid #a8dadc;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #a8dadc;
+      color: #1d3557;
+      border: 2px solid #457b9d;
+    }
+  }
+}
+.quizScreen_AnswerContainer {
+  width: 50vh;
+  height: 20vh;
+  background-color: #1d3557;
+  background-color: #1d3557;
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-weight: 400;
+  }
+}
+.quiz-Section_ButtonContainer {
+  width: 50vh;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid #457b9d;
+    background-color: #e63946;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+  }
+  button[disabled] {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+
+    background-color: #5c5b5b;
+    font-weight: 600;
+    color: black;
+    cursor: not-allowed;
+  }
+  .buttonHide {
+    display: none;
+  }
+}
