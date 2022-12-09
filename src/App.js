@@ -1,5 +1,17 @@
+import useGameState from "./Hooks/useGameState";
+import QuizScreen from "./Page/QuizScreen";
+import ScoreScreen from "./Page/ScoreScreen";
+import WelcomeScreen from "./Page/WelcomeScreen";
+
 function App() {
-  return <div className="App">Vinayak</div>;
+  const { gameState } = useGameState();
+  return (
+    <div>
+      {gameState === "menu" && <WelcomeScreen />}
+      {gameState === "quiz" && <QuizScreen />}
+      {gameState === "endScreen" && <ScoreScreen />}
+    </div>
+  );
 }
 
 export default App;
